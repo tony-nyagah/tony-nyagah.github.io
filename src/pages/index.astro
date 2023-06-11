@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { projects } from "../data/projects.ts";
+import { projects } from "../data/projects";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
@@ -12,30 +12,39 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout>
-
-    <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Antony Nyagah</div>
-      <div class="text-3xl py-3 font-bold">Software Engineer and Data Scientist in Training</div>
-      <div class="py-2">
-        <text class="text-lg">
-          <p>I am a Full Stack Developer with expertise in Python and JavaScript.</p>
-          <p>I have a passion for programming across various platforms and writing code that solves problems.</p>
-          <p>This site is still a work in progress as of now.</p>
-        </text>
-      </div>
-      <div class="mt-8">
-        <a class="btn" href="https://twitter.com/NyagahTony" target="_blank"> Let's connect!</a>
-      </div>
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Antony Nyagah</div>
+    <div class="text-3xl py-3 font-bold">
+      Software Engineer and Data Scientist in Training
     </div>
-
-    <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="py-2">
+      <text class="text-lg">
+        <p>
+          I am a Full Stack Developer with expertise in Python and JavaScript.
+        </p>
+        <p>
+          I have a passion for programming across various platforms and writing
+          code that solves problems.
+        </p>
+        <p>This site is still a work in progress as of now.</p>
+      </text>
     </div>
+    <div class="mt-8">
+      <a class="btn" href="https://twitter.com/NyagahTony" target="_blank">
+        Let's connect!</a
+      >
+    </div>
+  </div>
 
-    {
-      projects.map((project) => {
-        return (
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div>
+
+  {
+    projects.slice(-3).map((project) => {
+      return (
+        <>
           <HorizontalCard
             title={project.title}
             img={project.img}
@@ -44,18 +53,19 @@ const last_posts = posts.slice(0, 3);
             target="_blank"
             badge={project.badge}
           />
-          <div class="divider my-0"></div>
-        )
-      })
-    }
+          <div class="divider my-0" />
+        </>
+      );
+    })
+  }
 
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
 
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-    </div>
-
-    {
-      last_posts.map((post) => (
+  {
+    last_posts.map((post) => (
+      <>
         <HorizontalCard
           title={post.data.title}
           img={post.data.heroImage}
@@ -64,8 +74,8 @@ const last_posts = posts.slice(0, 3);
           target="_self"
           badge={post.data.badge}
         />
-        <div class="divider my-0"></div>
-      ))
-    }
-
+        <div class="divider my-0" />
+      </>
+    ))
+  }
 </BaseLayout>
