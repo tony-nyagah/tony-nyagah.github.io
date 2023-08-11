@@ -13,13 +13,13 @@ export const projects = [
     url: "https://drive.google.com/file/d/1tYg7O75X7F7aqCmpyZBN_38wapoFc5vS/",
     badge: "Other",
   },
-  {
-    title: "Newsletter Signup Page",
-    img: "/newsletter_signup.png",
-    desc: "A simple newsletter signup page made using Express, Bootstrap, the Mailchimp API and EJS.",
-    url: "https://ostrich-newsletter-signup.onrender.com/",
-    badge: "Frontend",
-  },
+  // {
+  //   title: "Newsletter Signup Page",
+  //   img: "/newsletter_signup.png",
+  //   desc: "A simple newsletter signup page made using Express, Bootstrap, the Mailchimp API and EJS.",
+  //   url: "https://ostrich-newsletter-signup.onrender.com/",
+  //   badge: "Frontend",
+  // },
   {
     title: "Phonecat",
     img: "/phonecat.png",
