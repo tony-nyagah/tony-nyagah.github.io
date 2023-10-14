@@ -1,3 +1,8 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
 <!--  
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -21,24 +26,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
 </BaseLayout>
 -->
-
----
-import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/cv/TimeLine.astro";
----
-
 <BaseLayout title="Resume">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Personal Elevator Pitch</div>
   </div>
-  
-  <div class="w-1/2 mx-auto">
-    <div class="bg-gray-300 w-full h-auto">
-      <!-- Placeholder image -->
-      
-      <img src="https://placehold.co/600x400?text=This+Is+A+Placeholder+For+My+Video" alt="elevator pitch video">
-    </div>
-  </div>
 
+  <iframe
+    width="420"
+    height="345"
+    src="https://www.youtube.com/embed/M0MjextiBIc"
+  >
+  </iframe>
 </BaseLayout>
-
