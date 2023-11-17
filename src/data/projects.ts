@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "BiblioBridge",
+    img: "/bibliobridge.jpeg",
+    desc: "A book reader/tracker application made with Python and Django.",
+    url: "https://github.com/tony-nyagah/bibliobridge",
+    badge: "Backend",
+  },
+  {
     title: "Newsletter Signup Page",
     img: "/newsletter_signup.png",
     desc: "A simple newsletter signup page made using Express, Bootstrap, the Mailchimp API and EJS.",
