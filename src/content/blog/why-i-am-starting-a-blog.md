@@ -1,14 +1,13 @@
 ---
 author: "Antony Nyagah"
 title: "Why I am starting a blog"
-pubDatetime: 2024-03-03
-modDatetime: 2024-03-03
+pubDatetime: 2024-03-03T03:42:51
+modDatetime: 2024-03-03T03:52:51
 slug: "why-i-am-starting-a-blog"
 featured: false
 draft: false
 tags:
-  - "Blog"
-  - "Astro"
+  - "Thoughts"
 description: "Reasons why I have decided to start blogging."
 ---
 
