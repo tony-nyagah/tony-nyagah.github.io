@@ -11,4 +11,4 @@ _Email:_
 Feel free to drop me an email at [tony.m.nyagah@gmail.com](mailto:tony.m.nyagah@gmail.com), and I'll do my best to respond as soon as possible.
 
 _Social Media:_
-Connect with me on social media as well. Find me on [Twitter/X](https://x.com/NyagahTony) or [LinkedIn](https://www.linkedin.com/).
+Connect with me on social media as well. Find me on [Twitter/X](https://x.com/NyagahTony) or [LinkedIn](https://www.linkedin.com/in/antony-nyagah/).
