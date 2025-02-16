@@ -7,21 +7,19 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Personal Blog',
+    description: `A modern, responsive blog built with Next.js, Tailwind CSS, and MDX. Features include dark mode, 
+    tags, search functionality, and optimized performance.`,
+    imgSrc: '/static/images/projects/site.png',
+    href: 'https://tony-nyagah.github.io',
   },
-  {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
-  },
+  // Add more projects in this format:
+  // {
+  //   title: 'Project Name',
+  //   description: 'Project description that explains what the project does and what technologies were used.',
+  //   imgSrc: '/static/images/projects/project-image.jpg', // 16:9 ratio recommended
+  //   href: 'https://github.com/your-username/project-repo',
+  // },
 ]
 
 export default projectsData
