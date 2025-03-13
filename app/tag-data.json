@@ -1,8 +1,11 @@
 {
-  "burnout": 1,
   "credit": 1,
   "acknowledgment": 1,
   "career": 1,
+  "burnout": 1,
+  "web-development": 1,
+  "apis": 1,
+  "api-development": 1,
   "next-js": 6,
   "tailwind": 3,
   "guide": 5,
